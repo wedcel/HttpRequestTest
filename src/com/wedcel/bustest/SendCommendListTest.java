@@ -5,7 +5,7 @@ import java.util.Map;
 
 import com.wedcel.http.HttpRequest;
 
-public class SendCommendTest {
+public class SendCommendListTest {
 
 	/**
 	 * @param args
@@ -16,10 +16,18 @@ public class SendCommendTest {
 		map.put("requestParam.equalMap.uukey",  "156324789653248"  );
 		map.put("requestParam.equalMap.commandType",  "message"  );
 		map.put("list[0].opId",  "144743"  );
-		map.put("list[0].vid", "10126");
-		map.put("list[0].vehicleNo", "œÊN88889");
-		map.put("list[0].coOemcode", "E001");
-		map.put("list[0].commaddr", "15290424072");
+		map.put("list[0].vid", "10126");//entId
+		map.put("list[0].vehicleNo", "œÊN88889");//entName
+		map.put("list[0].coOemcode", "E001");//oemCode
+		map.put("list[0].commaddr", "15290424072");  //commaddr
+		
+		
+		map.put("list[1].opId",  "144743"  );
+		map.put("list[1].vid", "262563");
+		map.put("list[1].vehicleNo", "12345678");
+		map.put("list[1].coOemcode", "E013");
+		map.put("list[1].commaddr", "18710324191");
+		
 		map.put("mccCommand.message", "≤‚ ‘∑¢ÀÕ");
 			
 		map.put("mccCommand.advertisingAttValue", "0");
